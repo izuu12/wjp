@@ -1,0 +1,289 @@
+body
+{
+	background-color: #303030;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+.wrapper
+{
+	width: 100%;
+}
+.wczytane
+{
+
+	background-color: #303030;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+.koniec
+{
+	background-color: #191D21;
+	padding-bottom: 80px;
+}
+.
+
+
+.header
+{
+	width:100%;
+	padding: 40px 0;
+}
+.bada
+{
+	background-color: #2B2B2B;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.metoda
+{
+	background-color: #2B2B2B;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+
+.lab
+{
+
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+	background-color: #303030;
+	
+
+
+}
+
+.logo
+{
+	width: 850px;
+	text-transform: uppercase;
+	font-size: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.categories
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding: 0;
+}
+.metody
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 80px;
+}
+.biblio
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	padding: 0;
+	margin-top: 40px;
+
+}
+h1
+{
+	font-size: 44px;
+	font-weight: 400;
+	color: #39a5f1;
+	margin-bottom: 20px;
+}
+
+.nav
+{ 
+	width: 100%;
+	padding: 10px 0;
+	background-color: #808080;
+	text-align: center;
+	border-top: 1px solid #39a5f1;
+	border-bottom: 1px solid #39a5f1;
+}
+
+.obrazki
+{
+	display: inline-block;
+	margin-top: 1px;
+}
+
+.obrazki a
+{
+	opacity: 0.9;
+}
+
+.obrazki a:hover
+{
+	opacity: 1;
+}
+figure
+{
+	margin: 8px;
+	padding: 0;
+}
+
+figcaption
+{
+	margin-top: 8px;
+	padding: 0;
+}
+.content
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.socials
+{
+	width:100%;
+	text-align: center;
+	background-color: #292929;
+}
+.entries
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+.biblio
+{
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+}
+#newest
+{
+	background-color: #191D21;
+}
+.entrytxt
+{
+	background-color: #303030;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #39A5F1;
+}
+
+ol > li:first-child
+{
+	border-left: 1px dashed #39A5F1;
+}
+
+ol > li:hover
+{
+	background-color: #159AED;
+}
+
+ol > li:hover > a
+{
+	color: #451717;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color:#4CAEEF;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #751b1b;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #159AED;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #451717;
+}

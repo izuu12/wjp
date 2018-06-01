@@ -1,0 +1,637 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Retrogranie</title>
+	
+	<meta name="description" content="Serwis o starych grach pochodzących z Nintendo Entertainment System" />
+	<meta name="keywords" content="gry, komputerowe, retro, nes, konsole, retrogranie, stare gry" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	<script>
+		function switchInfo()
+		{
+		   var info = document.getElementById('info')
+		   info.style.display=(info.style.display=='none')?'':'none'
+		}
+	</script>
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+				<p><span style="color: #39a5f1" >Marteczkowa </span>gała</p>
+					<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="#categories">Strona główna</a></li>
+				<li><a href="#badanie">Opis tematu</a></li>
+
+				<li><a href="#newest">Laboratoria</a>
+					<ul>
+						<li><a href="#lab1">10.03.1017</a></li>
+						<li><a href="#lab2">06.04.1017</a></li>
+
+					</ul>
+				</li>
+				
+
+				
+				<li><a href="#autorki">Autorki</a>
+					<ul>
+						
+						<li><a href="#iza">Iza</a></li>
+						<li><a href="#marta">Marta</a></li>
+					</ul>
+				
+				</li>
+
+			</ol>
+		
+		</div>
+		
+		<main>
+			<section id="menu">
+				<div class="categories">
+				<a name="categories"></a>
+					<header>
+						<h1>Zastosowanie algorytmów do segmentacji naczyń krwionośnych oka</h1>
+						<p>Jeśli ciekawią Cię sposoby rekonstrukcji i analizy obrazów medycznych trafiłeś w dobre miejsce. Na tym blogu masz możliwość przeczytania krótkich sprawozdań z labolatoriów na których będziemy wykorzystywać różne algorytmy.Zostana one użyte w celu segmantacji obrazów medycznych w szczególności obrazów oka.</p>
+					</header>
+					
+					
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/twarz.jpg" ></a>
+								<figcaption>Twarz homosapiens [1]</figcaption>
+							</figure>
+
+						</div>
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/oko.jpg" ></a>
+								<figcaption>Oko człowieka [2]</figcaption>
+							</figure>
+
+						</div>
+
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/oka2.jpg" ></a>
+								<figcaption>Gałka oczna [3]</figcaption>
+							</figure>
+
+						</div>
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/oko3.jpg" ></a>
+								<figcaption>filtr A [4]</figcaption>
+							</figure>
+
+						</div>
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/oko4.jpg" ></a>
+								<figcaption>filtr C [4]</figcaption>
+							</figure>
+
+						</div>
+
+						<div class="obrazki">
+
+							<figure>
+								<a href="#"><img src="img/oko6.jpg" ></a>
+								<figcaption>filtr C [4]</figcaption>
+							</figure>
+
+						</div>
+						<p>[1] www.instytuturodyvivien.pl,[2] www.zdrowie.dziennik.pl,[3] www.mojeoczy.pl, [4] www.journals.plos.org </p>
+
+				</div>
+
+			</section>
+
+			<section id="newest"><a name="newest"></a>
+
+				<div class="entries">
+					
+
+						<header>
+
+							<h1>Laboratoria</h1><a name="lab1"></a>
+							<p>Poniżej będziemy umieszczać systematycznie przebieg naszej pracy ;) </p>
+
+						</header>
+					<div class="lab1"> 
+						
+
+						<div class="entry">
+
+					
+							<div class="lab">
+								<h2><span style="color:#39a5f1">Laboratoria 1:</span> Progowanie, czyli najprostsza forma segmentacji</h2>
+								<p>Segmentacja - proces podziału obrazu na części określane jako obszary (regiony), które są jednorodne (homogeniczne) pod względem pewnych wybranych własności. Obszarami są zbiory pikseli (punktów). </p>
+							<p> 
+								Na pierwszym laboratorium z Rekonstrukcji i Analizy Obrazu zajmowaliśmy się progowaniem.
+								Progowanie (thresholding) to metoda uzyskiwana na podstawie obrazu kolorowego lub w odcieniach szarości. Nasze obrazy będziemy tworzyć na podstawie obrazów w odcieniach szarości. Progowanie polega na wyznaczeniu dla danego obrazu progu jasności, a następnie każdy jaśniejszy piksel większy od progu (jaśniejszy) otrzymuje jedną wartość, a mniejszy (ciemniejsze) otrzymują drugą. 
+								Częstym zastosowaniem progowania jest oddzielenie obiektów pierwszoplanowych od tła.
+								Naszym zadaniem będzie oddzielenie naczyń krwionośnych na zdjęciach siatkówki oka od jej tła. 
+								Na naszym laboratorium używaliśmy środowiska Python wraz z biblioteką OpenCV.
+								
+								</p>
+							</div>
+							
+							<div class="rozw">
+								
+								<p> Na pierwszym laboratorium z Rekonstrukcji i Analizy Obrazu zajmowaliśmy się progowaniem.
+									Progowanie (thresholding) to metoda uzyskiwana na podstawie obrazu kolorowego lub w odcieniach szarości. Nasze obrazy będziemy tworzyć na podstawie obrazów w odcieniach szarości. Progowanie polega na wyznaczeniu dla danego obrazu progu jasności, a następnie każdy jaśniejszy piksel większy od progu (jaśniejszy) otrzymuje jedną wartość, a mniejszy (ciemniejsze) otrzymują drugą. 
+									Częstym zastosowaniem progowania jest oddzielenie obiektów pierwszoplanowych od tła.
+									Naszym zadaniem będzie oddzielenie naczyń krwionośnych na zdjęciach siatkówki oka od jej tła. 
+									Na naszym laboratorium używaliśmy środowiska Python wraz z biblioteką OpenCV.<br>
+
+									W bibliotece OpenCV  udostępniona jest metoda threshold o następującej sygnaturze :
+									<br><br>
+									(T, threshImage) = cv2.threshold(src, thresh, maxval, type)</br>
+									<br>Gdzie:</br>
+									<br>-src – obraz na którym będziemy dokonywali segmentacji (najlepiej w odcieniach szarości)
+								    <br>maxval – wartość użyta, jeśli jakiś piksel jest powyżej progu
+									<br>- type – metoda progowania</br>
+
+									Na początku zajęć ściągnęłyśmy publiczną bazę danych DRIVE ze strony podanej w opisie projektów.
+									Swoje pierwsze kroki w programie Python rozpoczęłyśmy poprzez  wczytanie zdjęcia za pomocą następującego kodu:
+									
+									 
+								</p>
+								
+								<div class="wczytane">
+									<img src="img/kod7.jpg"
+									<p>Komenda pozwoliła nam wyświetlić jedno ze zdjęć z bazy (wcześniej zamieniłyśmy roszerzenie zdjęcia z tif na jpg :	</p>
+									<a><img src="img/lab1.jpg"></a>
+
+								</div>
+								<div class="wczytane">
+									<figure>
+									<figcaption>Następnie zamieniłyśmy kolorowy obraz na obraz w odcieniach szarości za pomocą komendy :
+											<img src="img/kod8.jpg"
+											<br>Efekt był następujący: 
+									</figcaption>
+									<a href="#"><img src="img/lab2.jpg" ></a>
+									</figure>
+								</div>
+								
+								<div class="wczytane">
+												<figcaption>Możliwa jest również zamiana obrazu w normalnych kolorach na odcienie szarości za pomocą komendy : <br>
+												<img src="img/kod9.jpg">
+												Poniżej przedstawiamy efekt:<br>
+
+												</figcaption>
+												<a><img src="img/lab3.jpg"></a>
+
+								</div>
+								
+								<div class="wczytane">
+									<figcaption>
+										Trzecią metodą jest użycie następującej komendy:
+										<img src="img/kod10.jpg">
+										<br>Czego efektem będzie:
+									</figcaption>
+									<a><img src="img/lab3.jpg"></a>
+									<p>Ponieważ różnice pomiędzy wszystkimi trzema metodami są małe, wybraliśmy pierwszy sposób. </p>
+								</div>		
+							</div>
+
+						</div>
+
+
+					
+					
+				
+						<div class="metody">
+							
+							<div class="metoda">
+								<h2>Po wczytaniu zdjęcia wypisaliśmy metody, które można zastosować do progowania.</h2>
+								<a><img src="img/kod5.jpg"></a>
+								<h2>Metody progowania:<br></h2>
+								<p>1)	THRESH_BINARY</p>
+								<img src="img/def.jpg">
+								<p>Jeśli intensywność piksela src(x, y) jest większa niż wartość thresh, wtedy nowa intensywność piksela jest ustawiona na wartość maksymalnąl. W przeciwnym razie piksele są ustawione na 0.</p>
+								<img src="img/kod4.jpg">
+								<img src="img/lab5.jpg">
+							</div>
+							<div class="metoda">
+								<p>2)	THRESH_BINARY_INV</p>
+								<img src="img/def2.jpg">
+								<p>Jeśli intensywność piksela src(x, y) jest większa niż wartość thresh, wówczas nowa intensywność piksela jest ustawiona na 0. W przeciwnym razie jest ustawiona na wartość maksymalną.</p>
+								<img src="img/kod3.jpg">
+								<img src="img/lab6.jpg">
+							</div>
+							<div class="metoda">
+								<p>3)	THRESH_TRUNC</p>
+								<img src="img/def3.jpg">
+								<p>Maksymalna wartość intensywności pikseli to thresh, jeśli src (x, y) jest większy, to jego wartość jest obcięta.</p>
+								<img src="img/kod2.jpg">
+								<img src="img/lab7.png">
+							</div>
+								<div class="metoda">
+								<p>4)	TRESH_TOZERO</p>
+								<img src="img/def4.jpg">
+								<p>Jeśli src (x, y) jest niższy niż wartość thresh, nowa wartość piksela zostanie ustawiona na 0.</p>
+								<img src="img/kod1.jpg">
+								<img src="img/lab8.jpg">
+							</div>
+								<div class="metoda">
+								<p>5)	TRESH_TOZERO_INV</p>
+								<img src="img/def5.jpg">
+								<p>Maksymalna wartość intensywności pikseli to thresh, jeśli src (x, y) jest większy, to jego wartość jest obcięta.</p>
+								<img src="img/kod6.jpg">
+								<img src="img/lab9.jpg">
+							</div>
+							
+							<div class="metoda">
+							<h2>Podsumowanie metod progowania:</h2>
+							<a>Efekty progowania nie są zadawalające. Uzyskane obrazy są często przyciemnione, a naczynia krwionośne oka w środku zanikają, tak samo jak bardzo cienkie naczynka, co znacząco i utrudnia analizę zdjęcia. Progowanie jako najprostsza metoda segmentacji, nie jest efektywna. 
+							Żeby to dokładniej sprawdzić, w najbliższym czasie planujemy dokonać implementacji protokołu ewaluacyjnego procesu segmentacji. </a>
+							
+							</div>
+						</div>
+					
+						<div class="biblio">
+
+							BIBLIOGRAFIA: <br>
+							- Y. Zhao, Y. Liu, X.Wu, S.p.harding, Y.Zheng - "Retinal Vessel Segmentation: An Efficient Graph Cut Approach with Retinex and Local Phase "</a> <br>
+							-<a target ="_blank" href=" https://www.pyimagesearch.com/2014/09/08/thresholding-simple-image-segmentation-using-opencv/ ">Thresholding: Simple Image Segmentation using OpenCV
+							by Adrian Rosebrock on September 8, 2014 </a><br>
+							- <a target ="_blank" href="https://docs.opencv.org/2.4/doc/tutorials/imgproc/threshold/threshold.html ">dokumentacja OpenCV(23.03)</a><br> <br> <br>
+						</div>
+					
+					</div>
+					<div class="lab2"><a name="lab2"></a>
+						<div class="lab">
+							<h2><span style="color:#39a5f1">Laboratoria 2:</span> Filtrowanie obrazów różnymi metodami</h2>
+							<p>Filtracja obrazów - filtracja obrazów jest zaliczana do metod cyfrowego przetwarzania sygnałów. Filtracja jest operacją matematyczną na pikselach obrazu źródłowego w wyniku której uzyskiwany jest nowy, 
+							przekształcony obraz. Filtrację określa się jako przekształcenie kontekstowe, gdyż dla wyznaczenia nowej wartości piksela obrazu docelowego potrzebna jest informacja z wielu pikseli obrazu źródłowego [1]. </p>
+							<p>
+								Dnia 06.04.18 odbyły się drugie już laboratoria z Rekonstrukcji i Analizy Obrazów. Dzisiejsza praca polegała na zapoznaniu się z metodami korekcji  obrazów niejednorodnych opisanych w naszym głównym artykule.
+								Filtracja stosowana jest przeważnie jako metoda wydobycia z oryginalnego obrazu szeregu informacji w celu ich dalszej obróbki.<br><br>
+								Główne zadania filtracji:<br><br>
+								– Usunięcie niepożądanego szumu z obrazu <br>
+								– Poprawa ostrości <br>
+								– Usunięcie określonych wad obrazu<br>
+								– Poprawa obrazu o złej jakości technicznej <br>
+								– Rekonstrukcja obrazu w przypadku jego degradacji<br>
+
+							</p>
+						</div>
+						<div>
+						<div class="rozw">
+							
+							
+									<h2>2D Convolution ( Image Filtering ), czyli SPLOT DWUWYMIAROWY ( filtracja obrazu ) </h2>
+									<p>TEORIA :<br><br>
+									- filtry dolnoprzepustowe (LPF) – pomaga w usuwaniu szumów, rozmywanie obrazów<br>
+									- filtry górnoprzepustowe (HPF) – pomagają w znajdywaniu krawędzi na obrazach <br>
+									Nasza biblioteka OpenCV udostępnia funkcję cv2.filter2D. Funkcja ta pozwala łączyć jądro (kernel) z obrazem: <br><br>
+									<img src="img/kod11.png"><br><br>
+									Opis parametrów:<br><br>
+									- src - obraz wejściowy <br>
+									- dst - obraz wyjściowy o tym samym rozmiarze i tej samej liczbie kanałów co src<br>
+									- ddepth - pożądana głębokości docelowego obrazu<br>
+									- kernel - jądro splotu (lub raczej jądro korelacji), jednokanałowa macierz zmiennoprzecinkowa; jeśli chcesz zastosować różne jądra dla różnych kanałów, podziel obraz na oddzielne płaszczyzny kolorów, używając podziału i przetwarzaj je pojedynczo<br>
+									- anchor - kotwica jądra, która wskazuje względną pozycję przefiltrowanego punktu w jądrze; kotwica powinna leżeć w jądrze; domyślna wartość (-1, -1) oznacza, że zakotwiczenie znajduje się w centrum jądra<br>
+									- delta - opcjonalna wartość dodana do filtrowanych pikseli przed zapisaniem ich w dst<br>
+									- borderType - metoda ekstrapolacji pikseli borderType<br>
+									Funkcja splata obraz z jądrem.<br><br>
+									Funkcja faktycznie oblicza korelację, a nie splot:<br><br>
+									<img src="img/def6.jpg"><br><br>
+									</p>
+									<p>
+									Na dzisiejszych laboratorium zastosowaliśmy filtr uśredniający na obrazie. Filtr uśredniający jest filtrem dolnoprzepustowym. 
+									Efekty działania filtrów zostały przedstawione na obrazie w skali szarości, oraz w normalnych kolorach (obrazy pobrane z bazy DRIVE). 
+									Na zajęciach zastosowaliśmy ten filtr z różnymi parametrami – różny rozmiar macierzy , różne uśrednienie jądra: 
+									</p>
+							</div>		
+									
+							<div class="metody">
+								
+								<div class="metoda">
+									<h2>1)	Uśrednione jądro filtra 5x5 będzie wyglądało następująco  - podzielone przez 25: </h2>
+									<a><img src="img/def7.png"></a>
+									<p>Zastosowany kod: </p>
+									<img src="img/kod12.jpg">
+									<img src="img/oko7.jpg">
+									<img src="img/oko8.jpg">
+									<p>
+										WNIOSKI:<br>
+										Obraz po zastosowaniu filtru uśredniającego o tych parametrach dał najlepsze rezultaty.  
+										Obraz został rozmyty, przez co naczynia krwionośne wydają się jaśniejsze. 
+									</p>
+									
+								</div>
+								
+								<div class="metoda" >
+									<h2>2)	Uśrednione jądro filtra 9x9 będzie wyglądało następująco – podzielone przez 25 : </h2>
+			
+										<a>Zmieniliśmy jedną linijkę kodu :<a> <br>
+										<img src="img/kod13.jpg"><br>
+										<img src="img/oko9.jpg">
+										<img src="img/oko10.jpg">
+										<p>
+											WNIOSKI:<br>  Obraz jest zbyt rozmazany, co utrudnia analizę obrazu. 
+											Im większy dzielnik macierzy tym obraz jest bardziej rozmyty.
+
+										</p>
+
+								
+								</div>
+								
+								<div class="metoda" >
+									<h2>3)	Uśrednione jądro filtra 9x9 będzie wyglądało następująco – podzielone przez 100 : </h2>
+			
+										<a>Zmieniliśmy jedną linijkę kodu :<a> <br>
+										<img src="img/kod14.jpg"><br>
+										<img src="img/oko11.jpg">
+										<img src="img/oko12.jpg">
+										<p>WNIOSKI:<br> Obraz jest zbyt rozjaśniony i nie są widoczne nawet naczynia krwionośne oka. 
+											Im większy rozmiar jądra filtra tym jaśniejszy staje się obraz.
+										</p>
+
+								
+								</div>
+								
+								<div class="metoda">
+									<h2>4)	Uśrednione jądro filtra 5x5 będzie wyglądało następująco – podzielone przez 100 : </h2>
+									<img src="img/def8.jpg">
+									<p>Zmieniamy jedną linijkę kodu :</p>
+									<img src="img/kod15.jpg">
+									<img src="img/oko13.jpg">
+									<img src="img/oko14.jpg">
+									<p>WNIOSKI<br> Obraz jest znacznie pociemniony, co utrudnia analizę obrazu. 
+
+
+									</p>
+								</div>
+								
+					</div>
+					<div class="metoda">
+						
+					
+							<h2>WNIOSKI OGÓLNE : </h2>
+							<br>Zastosowany filtr o rozmiarze 5 na 5 i podzieleniu przez 25 dał najlepsze efekty.
+						
+					</div>
+					<div>
+							<div class="rozw">
+								<h2>Image Blurring (Image Smoothing) – ROZMYCIE OBRAZU (wygładzanie obrazu)</h2>
+								<p>
+								Rozmycie (ang. smoothing) jest prostą i często stosowaną w przetwarzaniu obrazów operacją. 
+								Ma wiele zastosowań jednak głównie wykorzystywana jest do redukcji szumów oraz niepożądanych zniekształceń obrazu [2].
+								Rozmycie obrazu uzyskuje się przez splatanie obrazu z  filtrem dolnoprzepustowym. Przydaje się do usuwania szumów. 
+								W rzeczywistości usuwa zawartość wysokiej częstotliwości, czyli oprócz szumu również krawędzie z obrazu. W związku z tym krawędzie są nieco rozmyte.
+								Filtry medianowy i bilateralny służą głównie do usuwania szumów z obrazu. Z racji, że nasze obrazy siatkówki oka nie zawierają widocznych szumów (gaussowskie, 
+								salt&pepper) pokazany został tylko jeden z tych filtrów (bilateralny) w celu sprawdzenia jak zadziała na nasz obraz [3].<br>
+								Poniżej przedstawiamy różne techniki rozmywania obrazu : 
+
+								</p>
+							
+							</div>
+							<div class="metoda">
+												
+								<h2>1)	Uśrednianie (averaging)</h2>
+								<p> 
+								Filtrowanie prostokątne to filtrowanie obrazu na zasadzie pobierania średniej wartości ze wszystkich pikseli w obszarze jądra i zastępowanie elementu centralnego. 
+								W rzeczywistości jest to filtr splotowy.  Filtry splotowe zapewniają metodę pomnożenia dwóch tablic w celu wytworzenia trzeciego.
+								Odbywa się to za pomocą funkcji cv2.blur (). <br>
+								-Kod dla jądra 5 na 5:
+								</p>
+								<img src="img/kod16.jpg">
+								<img src="img/oko15.jpg">
+								<img src="img/oko16.jpg">
+								<p>WNIOSKI:<br>Obraz został rozmyty, co zepsuło możliwość jego analizy. 
+								</p>
+								<h3>- Zamieniona linijka kodu dla jądra 2 na 2:</h3>
+								<img src="img/kod17.jpg">
+								<img src="img/oko17.png">
+								<img src="img/oko18.jpg">
+								<p>WNIOSKI:<br>: Obraz stał się bardzo rozmyty i nie jest możliwa jego wnikliwa analiza. </p>
+							</div>
+							</div>
+							
+							<div class="metoda">
+								<h2>2)	Rozmycie Gaussowskie (gaussian blurring)  </h2>
+								<img src="img/kod18.jpg">
+								<img src="img/oko19.jpg">
+								<img src="img/oko20.png">
+								<p>WNINOSKI:<br> : Obraz jest bardzo rozmyty co utrudnia analizę. .</p>
+								
+								
+								<h3>- Zamieniona linijka kodu dla jądra 9 na 9: </h3>
+								<img src="img/kod19.jpg">
+								<img src="img/oko21.jpg">
+								<img src="img/oko22.jpg">
+								<p>WNINOSKI:<br> Efekt porównywalny jak z przykładem wyżej.</p>
+							</div>
+							<div class="wnioski">
+								<h2>WNIOSKI OGÓLNE:</h2>
+								</p>Zamiana ostatniego parametru z 0 na inne nie dawała żadnych rezultatów.  
+								Filtr Gaussowski stosuje się w celu zmniejszenia szumów obrazu i zmniejszenia szczegółów,
+								co można wyraźnie zauważyć na naszych zdjęciach wynikowych.
+								Efektem wizualnym tej techniki zamazywania jest płynne rozmycie przypominające oglądanie obrazu przez przezroczysty ekran [4]. </p>
+							</div>
+							<div class="metoda">
+								<h2>3)	Bilateral filtreing </h2>
+								<p>
+									Filtr bilateralny (również dobrą formą jest filtr dwustronny) to nieliniowy filtr wygładzający brzegi i redukujący hałas. 
+									Użycie filtru dwustronnego polega na zastąpieniu wartości intensywności każdego piksela obrazu średnią ważoną wartości intensywności z pobliskich pikseli. 
+									Ta waga może być wzięta w oparciu o rozkład Gaussa. Co najważniejsze, wagi zależą nie tylko od euklidesowej odległości pikseli, ale także od różnic radiometrycznych (na przykład zakres różnic, 
+									takie jak intensywność koloru, odległość głębi itp.).
+									Zachowuje to ostrość krawędzi poprzez systematyczne przechodzenie między poszczególnymi pikselami i dopasowywanie wag odpowiednio do sąsiednich pikseli.
+								</p>
+								<img src="img/def9.jpg">
+								<p>
+									Do zastosowania filtru bilateralnego zastosowaliśmy funkcję cv2.bilateralFilter (), która jest wysoce efektywny w usuwaniu szumów,
+									zachowując ostre krawędzie. Ale operacja jest wolniejsza w porównaniu do innych filtrów.
+								</p>
+								<h3>- Kod dla średnicy sąsiedztwa równej 5 i wartościach sigma równych 75 :</h3>
+								<img src-="img/kod20.jpg">
+								<img src-="img/oko23.jpg">
+								<img src-="img/oko24.jpg">
+								<p>WNIOSKI:<be>Obraz został rozmyty</p>
+								<h3>- Kod dla mniejszej średnicy sąsiedztwa jądra, ale większych wartościach sigma:</h3>
+								<img src-="img/kod21.jpg">
+								<img src-="img/oko25.jpg">
+								<img src-="img/oko26.jpg">
+								<p>WNIOSKI:<be>Mniejsze rozmazanie niż w przykładzie powyżej. Efekt jest zadawalający. </p>
+							</div>
+					</div>
+					
+
+
+					
+							<div class="metoda">
+							<h2>Podsumowanie</h2>
+							<a>
+								W celu filtracji obrazów potrzebna jest informacja ze wszystkich o wszystkich pikselach obrazu. Przetwarzanie pikseli polega na zmianie wartości koloru dla poszczególnych pikseli 
+								obrazu. Wartość ta jest zmieniana na postawie sąsiednich pikseli. [6]<br><br>
+
+								W naszym przypadku zastosowane filtry pozwoliły najczęściej lekko wygładzić obraz lub w większości przypadków rozmyły go, co sprawiło, że obraz jest trudniejszy do analizy, a krawędzie naczyń krwionośnych nie mają jasno określonych granic. 
+							</a>
+							
+							</div>
+							
+							<div class="biblio">
+
+							BIBLIOGRAFIA: <br>
+												
+							[1] - <a target ="_blank" href=" https://pl.wikipedia.org/wiki/Filtracja_obraz%C3%B3w ">Wikipedia "Filtracja Obrazów",1 luty 2018</a><br>
+							[2] – „Metody przetwarzania obrazów z wykorzystaniem biblioteki OpenCV” SEBASTIAN WOJAS<br>
+							[3] - <a target ="_blank" href="https://en.wikipedia.org/wiki/Gaussian_blur ">Wikipedia "Gaussian blur",17 marca 2018</a><br>
+							[4] - <a target ="_blank" href=" https://eduwiki.wmi.amu.edu.pl/andre/PTO/odszumianie ">EduWiki "Odszumianie",2015</a><br>
+							[5] -„ Bilateral Filter”  Aydın, Anıl Can<br>
+							<a name="badanie"></a>	
+							[6] - <a target ="_blank" href=" http://rmantiuk.zut.edu.pl/data/wyklad_przetwarzanie_obrazow.pdf">Zakład Grafiki Komputerowej Wydział Informatyki Politechnika Szczecińska  "Wprowadzenie do przetwarzania obrazów" Radosław Mantiuk, maj 2008</a><br><a name="badania"></a>
+							</div>
+							
+							
+							
+						</div>
+
+							
+
+							
+							
+							
+						
+						
+						
+						
+						
+					</div>
+							
+				</div>
+			</section>
+			<section id="badania">
+				<div class="categories">
+				<h1>Zastosowanie algorytmów do segmentacji naczyń krwionośnych oka</h1>
+				<a>	
+						W artykule, na którym powinniśmy opierać się podczas przeprowadzania różnych eksperymentów na laboratorium  Rekonstrukcji i Analizy Obrazów, autorzy starają się stawić czoła problemom jakie stawia segmentacja naczyń krwionośnych oka. W artykule zawarto trzy innowacyjne metody pozwalające rozwiązać ten problem: 
+					<br>
+					</a>
+				</div>
+				<div class="bada">
+					
+
+						
+					<a>	1)	Retinex- based intensity inhomogrnity correction – korekcja niejednorodności natężenia obrazu opartej na metodzie Retinax. 
+						Ma na celu stawić czoła wyzwaniom jakim jest niejednorodność intensywności obrazu oraz stosunkowo niski kontrast cienkich naczyń krwionośnych w porównaniu z tłem. 
+						Stosowany jest w celu poprawy jakości zdjęcia, by usunąć wszelkie efekty zmieniających się warunków oświetlenia. 
+					</a>
+				</div>
+				<div class="bada">
+					<a>
+						2)	Local phase-based vessel enhancement – lokalna korekcja naczyń fazowych. Stosowana do uwydatniania krawędzi naczyń. 
+					</a>
+				</div>
+				<div class="bada">
+					</a>
+						3)	Graph cut – based active contour segmentation – aktywna segmentacja konturów oparta na wykresie. Używana jest ze względu na wydajność i skuteczność w segmentacji naczyń z ulepszonych/ wzmocnionych obrazów przy użyciu filtru fazy lokalnej.
+					</a>
+				</div>
+			</section>
+			<section id="newest">
+				<div class="entries">
+					<a name="autorki"></a>
+					<h1>Autorki</h1>
+					<a name="marta"></a>
+					<a>Jesteśmy studentkami Politechniki Gdańskiej na kierunku inżynierii biomedycznej. Jest to nasz szósty semestr, obie zdecydowałyśmy się wybrać informatykę na specjalizację.</a>
+					<div class="metoda">
+					<a name="marta"></a>
+						<h1>Marta </h1>
+						<a>Cześć!<br><br>
+							Studiuję na ETI z wspaniałymi ludźmi. Razem z nimi realizujemy projekty i organizujemy wydarzenia, 
+							umożliwiające ludziom, wyjazdy na praktyki do krajów na całym świecie. Od zawsze interesowałam się światem i starałam się zapamiętać każdą  chwilę. 
+							Chęć utrwalenia wspomnień zachęciła mnie do fotografii. Ta pasja przełożyła się na naukę. Zaczęłam dociekać jak powstają obrazy, 
+							jak można je przetwarzać zmieniać by uzyskać coraz  lepszy efekty. Przetwarzaniem obrazów to nauka do, której postaram się Was zarazić ;) 
+						</a>
+					</div>
+					<div class="metoda">
+					<a name="iza"></a>
+						<h1>Izabela </h1>
+						<a>Hej!<br><br>
+							
+							Jestem Iza studiuję w Gdańsku. Moją pasją jest sport. Każda czynność wykonywana na świeżym powietrzu sprawia mi radość.
+							Podczas biegania zaczęłam zwracać uwagę na naturę, zwierzęta rośliny czy pogodę. Codziennie były one inne, co zachciało mnie do fotografii, 
+							aby uchwycić to mijające piękno. Wraz z rozwojem pasji zaczęłam interesować się sposobem w jaki można przetwarzać obrazy,
+							co zachęcą mnie do ciągłego poszerzania wiedzy w tej dziedzinie. 
+						
+
+						</a>
+
+					</div>
+				<a><br><br>Nasza wspólna pasja zachęciła nas do nauki dlatego postanowiłyśmy prowadzić bloga by dzielić się z wami naszymi badaniami.</a>
+				</div>
+			</section>
+			
+			
+	</div>
+				
+
+				<section id="stop">
+					<div class="footer">
+						<p>MarteczkowaGala.com &copy; 2018 Thank you for your visit !</p></div>
+					</div>
+				</section>
+		
+		
+		
+		
+		
+		</main>
+				<script src="jquery-1.11.3.min.js"></script>
+	
+				<script>
+
+					$(document).ready(function() {
+					var NavY = $('.nav').offset().top;
+				 
+					var stickyNav = function(){
+					var ScrollY = $(window).scrollTop();
+						  
+					if (ScrollY > NavY) { 
+						$('.nav').addClass('sticky');
+					} else {
+						$('.nav').removeClass('sticky'); 
+					}
+					};
+					 
+					stickyNav();
+					 
+					$(window).scroll(function() {
+						stickyNav();
+					});
+					});
+	
+				</script>
+	
+</body>
+</html>
